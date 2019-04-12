@@ -30,8 +30,12 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      $("#logo").attr("src", "images/logo_ch-01.png");
+      $("#toTop").css('display', 'block');
     } else {
       $("#mainNav").removeClass("navbar-shrink");
+      $("#logo").attr("src", "images/logo_去背_白-02.png");
+      $("#toTop").css('display', 'none');
     }
   };
   // Collapse now if page is not at top

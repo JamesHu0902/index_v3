@@ -84,6 +84,25 @@
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+  #stared{
+    margin-top:220px;
+  }
+}
+#toTop{
+  text-align: center;
+  z-index: 1010;
+  background:rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  display: none;
+}
+#toTop a{
+  color: #fff;
 }
 
 .masthead {
@@ -177,7 +196,7 @@
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .projects-section .featured-text {
@@ -301,5 +320,8 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+@media (min-width: 992px){
+    
 }
 
