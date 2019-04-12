@@ -25,7 +25,18 @@
     target: '#mainNav',
     offset: 100
   });
+  function windowSize() {
+    if ($(window).width() < 992) {
+      $("#logo").attr("src", "images/logo_ch-01.png");
+    } else {
+      $("#logo").attr("src", "images/logo_去背_白-02.png");
+    };
+  };
 
+  $(window).resize(function () {
+    windowSize()
+  });
+  windowSize()
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
@@ -34,10 +45,13 @@
       $("#toTop").css('display', 'block');
     } else {
       $("#mainNav").removeClass("navbar-shrink");
-      $("#logo").attr("src", "images/logo_去背_白-02.png");
+      windowSize();
       $("#toTop").css('display', 'none');
     }
   };
+
+
+
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
