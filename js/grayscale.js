@@ -28,8 +28,10 @@
   function windowSize() {
     if ($(window).width() < 992) {
       $("#logo").attr("src", "images/logo_ch-01.png");
+      $("#logo").css("width","10rem")
     } else {
       $("#logo").attr("src", "images/logo_去背_白-02.png");
+      $("#logo").css("width", "19rem")
     };
   };
 
@@ -47,6 +49,14 @@
       $("#mainNav").removeClass("navbar-shrink");
       windowSize();
       $("#toTop").css('display', 'none');
+    }
+
+    if ($("#mainNav").offset().top > 500)
+    {
+      $(".inner").css("bottom","-30px");
+    }else
+    {
+      $(".inner").css("bottom", "-350px");
     }
   };
 
