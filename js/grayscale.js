@@ -25,6 +25,7 @@
     target: '#mainNav',
     offset: 100
   });
+
   function windowSize() {
     if ($(window).width() < 992) {
       $("#logo").attr("src", "images/logo_ch-01.png");

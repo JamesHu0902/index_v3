@@ -339,3 +339,13 @@ footer {
 
 }
 }
+
+/* video */
+
+.wrapper__video{
+  position: absolute;
+  top:-100px;
+  left:-150px;
+  width:900px;
+  
+}
